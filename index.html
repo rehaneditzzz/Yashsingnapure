@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 Gilroy h-auto">
+    <div id="main" class="text-white font-light">
+      <nav
+        class="h-14 bg-gray-900 text-white flex items-center justify-between px-6 relative"
+      >
+        <span id="openSidebar" class="text-3xl flex items-center"
+          ><ion-icon name="filter-outline"></ion-icon
+        ></span>
+        <button
+          type="button"
+          class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br shadow-teal-500/50 rounded-lg text-sm px-7 py-2.5 text-center"
+        >
+          Contact
+        </button>
+      </nav>
+
+      <div
+        id="sidebar"
+        class="h-96 top-0 w-2/5 bg-gray-900 p-3 overflow-hidden absolute z-40 hidden"
+      >
+        <span id="closeSidebar" class="text-4xl px-2 text-white"
+          ><ion-icon name="close-outline"></ion-icon
+        ></span>
+        <div class="icont mt-8 cursor-pointer flex flex-col mx-4">
+          <div class="con1 flex items-center gap-5 my-2 hover:text-gray-400">
+            <a href="/" class="text-2xl text-blue-600"
+              ><i class="ri-home-2-line"></i
+            ></a>
+            <h3 class="text-lg">Home</h3>
+          </div>
+
+          <div class="con2 flex items-center gap-5 my-2 hover:text-gray-400">
+            <a
+              href="https://github.com/rehaneditzzz"
+              class="text-2xl text-white"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <h3 class="text-lg">Github</h3>
+          </div>
+
+          <div class="con5 flex items-center gap-5 my-2 hover:text-gray-400">
+            <a
+              href="https://www.youtube.com/@rehaneditz1320"
+              class="text-2xl text-red-600"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+            <h3 class="text-lg">Youtube</h3>
+          </div>
+
+          <div class="con3 flex items-center gap-5 my-2 hover:text-gray-400">
+            <a
+              href="https://www.linkedin.com/in/yash-singnapure-164643243/"
+              class="text-2xl text-blue-500"
+              ><i class="ri-linkedin-box-fill"></i
+            ></a>
+            <h3 class="text-lg">LinkedIn</h3>
+          </div>
+
+          <div class="con4 flex items-center gap-5 my-2 hover:text-gray-400">
+            <a
+              href="https://www.instagram.com/rehaneditzzz?igsh=MWhjOTJzYXNrZzZjOQ=="
+              class="text-2xl text-pink-600"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <h3 class="text-lg">Instagram</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="h-36 bg-slate-700 w-full">
+        <div
+          class="bg-image h-full w-full relative flex justify-between items-center px-11"
+          style="
+            background-image: url(bg2.jpg);
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div
+            class="img-overlay h-full w-full absolute top-0 left-0 bg-black opacity-55"
+          ></div>
+          <div class="my-logo h-32 w-32 rounded-full z-10 ">
+            <img
+              src="logo.jpg"
+              alt=""
+              class="h-full w-full rounded-full mix-blend-screen"
+            />
+          </div>
+
+          <div id="my-name" class="heading text-center z-10">
+            <h1 class="kalam text-4xl">Yash Singnapure</h1>
+            <p class="text-lg md:text-base ml-3">Rehaneditzzz</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-us" class="p-4 w-full flex flex-col items-center">
+        <h1 class="text-3xl flex items-center gap-4">
+          ABOUT<i class="text-slate-500">ME</i>
+        </h1>
+        <div class="h-px w-56 opacity-45 bg-slate-600 mt-1"></div>
+        <p class="mt-4 text-xl px-2 text-center text-slate-400 capitalize">
+          Hey there! I'm <span class="text-cyan-500">Yash Singnapure</span> a
+          <span class="text-cyan-500">full stack developer</span> passionate
+          about
+          <span class="text-cyan-500"
+            >building beautiful and functional websites.</span
+          >.From
+          <span class="text-cyan-500">eye-catching front-end designs</span> to
+          <span class="text-cyan-500">powerful back-end systems</span>, bring
+          your ideas to life. Let's chat about your next project!
+        </p>
+
+        <div
+          class="linkAndResume flex h-10 w-full px-6 mt-3 items-center text-gray-400"
+        >
+          <div class="links flex items-center text-xl w-2/4 gap-8 pt-2">
+            <a href="mailto:@yashsingnapure5848@gmail.com"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com/in/yash-singnapure-164643243/"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://github.com/rehaneditzzz"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+
+          <div
+            class="downResume flex w-2/4 h-full items-center gap-2 justify-end"
+          >
+            <a
+              href="YASH SINGNAPURE-resume..pdf"
+              download
+              class="flex items-center text-xl"
+              ><ion-icon name="arrow-down-circle-outline"></ion-icon
+            ></a>
+            <a
+              href="../images/YASH SINGNAPURE-resume..pdf"
+              download
+              class="text-white"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="selectWork" class="w-full px-6 h-auto my-3">
+        <div id="edLine" class="flex items-center w-full h-9">
+          <h1 class="text-3xl text-gray-400 mb-6">Projects</h1>
+          <div
+            class="h-px w-[340px] opacity-70 bg-slate-600 mt-2 block m-auto"
+          ></div>
+        </div>
+
+        <h1 class="text-3xl my-2 text-sky-600">FRONT-END</h1>
+
+        <div id="project-F1 " class="my-5">
+          <div
+            class="heading h-14 w-full my-1 bg-blue-900 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Facebook</h1>
+            <span class="text-slate-400">2024</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="facebook.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Facebook Clone</h1>
+              <span class="text-xl"><i>Social-Media App</i></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="project-F2 " class="my-5 overflow-hidden">
+          <div
+            class="heading h-14 w-full my-1 bg-orange-400 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Amazone</h1>
+            <span class="text-slate-400">2024</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="amazon.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Amazone Clone</h1>
+              <span class="text-xl"><i>E-commerce</i></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="project-F3 " class="my-5 overflow-hidden">
+          <div
+            class="heading h-14 w-full my-1 bg-pink-600 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Myntra</h1>
+            <span class="text-slate-400">2023</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="myntraa.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Myntra Clone</h1>
+              <span class="text-xl"><i>E-commerce</i></span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-3xl my-8 text-sky-600">BACK-END</h1>
+
+        <div id="project-B1 " class="my-5">
+          <div
+            class="heading h-14 w-full my-1 bg-red-600 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Pintrest</h1>
+            <span class="text-slate-400">2024</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="pintrest.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Pintrest Clone</h1>
+              <span class="text-xl"><i>Social App</i></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="project-B2 " class="my-5 overflow-hidden">
+          <div
+            class="heading h-14 w-full my-1 bg-purple-700 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Instagram</h1>
+            <span class="text-slate-400">2024</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="instagram.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Instagram Clone</h1>
+              <span class="text-xl"><i>Social-Media App</i></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="project-B3 " class="my-5 overflow-hidden">
+          <div
+            class="heading h-14 w-full my-1 bg-green-600 rounded-xl flex items-center justify-between px-6 font-semibold overflow-hidden"
+          >
+            <h1 class="text-xl">Myntra</h1>
+            <span class="text-slate-400">2023</span>
+          </div>
+          <div
+            class="card h-96 w-full bg-zinc-800 rounded-xl flex flex-col justify-between overflow-hidden"
+          >
+            <img src="spotify.jpg" alt="" />
+            <div class="flex flex-col pb-11 pl-6" id="des">
+              <h1 class="text-3xl">Spotify Clone</h1>
+              <span class="text-xl"><i>Music-App</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="What-iknow" class="w-full px-2 h-auto">
+        <div id="wline" class="flex items-end">
+          <h1 class="text-2xl pl-4">What I Know</h1>
+        </div>
+
+        <div class="first-w h-36 w-full p-4 text-gray-400">
+          <h3 class="text-2xl">FRONT-END</h3>
+          <div class="language my-2 flex flex-wrap gap-2">
+            <button
+              class="px-8 py-1 border-2 border-orange-900 rounded-sm text-lg"
+            >
+              HTML5
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-sky-900 rounded-sm text-lg"
+            >
+              CSS3
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-yellow-900 rounded-sm text-lg"
+            >
+              JAVASCRIPT
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-blue-900 rounded-sm text-lg"
+            >
+              TAILWINDCSS
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-purple-900 rounded-sm text-lg"
+            >
+              BOOTSTRAP
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-blue-900 rounded-sm text-lg"
+            >
+              REACT JS
+            </button>
+          </div>
+        </div>
+
+        <div class="second-w h-24 w-full p-4 mt-14 text-gray-400">
+          <h3 class="text-2xl">BACK-END</h3>
+          <div class="language my-2 flex flex-wrap gap-2">
+            <button
+              class="px-8 py-1 border-2 border-green-900 rounded-sm text-lg"
+            >
+              NODE-JS
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-green-900 rounded-sm text-lg"
+            >
+              EXPRESS
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-indigo-900 rounded-sm text-lg"
+            >
+              PHP
+            </button>
+          </div>
+        </div>
+
+        <div class="third-w h-24 w-full p-4 my-2 text-gray-400">
+          <h3 class="text-2xl">DATABASE</h3>
+          <div class="language my-2 flex flex-wrap gap-2">
+            <button
+              class="px-8 py-1 border-2 border-green-900 rounded-sm text-lg"
+            >
+              MONGO-DB
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-gray-600 rounded-sm text-lg"
+            >
+              MYSQL
+            </button>
+          </div>
+        </div>
+
+        <div class="fouth-w h-24 w-full p-4 my-2 text-gray-400">
+          <h3 class="text-2xl">DEVOPS</h3>
+          <div class="language my-2 flex flex-wrap gap-2">
+            <button
+              class="px-8 py-1 border-2 border-cyan-900 rounded-sm text-lg"
+            >
+              DOCKER
+            </button>
+            <button
+              class="px-8 py-1 border-2 border-red-900 rounded-sm text-lg"
+            >
+              GIT
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="Experience" class="w-full px-7 h-auto py-8">
+        <div id="exLine" class="flex items-center w-full h-11">
+          <h1 class="text-3xl text-gray-400 mb-6">Experience</h1>
+          <div
+            class="h-px w-2/4 opacity-70 bg-slate-600 mt-2 block m-auto"
+          ></div>
+        </div>
+
+        <div class="excont flex w-full gap-4 text-slate-300">
+          <div class="date w-2/5">
+            <h1>Front-end Intern</h1>
+            <h1>Iceico Technologies Pvt. Ltd,</h1>
+            <p>
+              March 1, 2024 ,<br />
+              Enrolled....
+              <!-- April 15, 2024 <br />(45 days) -->
+            </p>
+          </div>
+
+          <div class="description w-2/4">
+            <p>
+              Developed responsive web pages with HTML, CSS, and JavaScript.
+              <br />
+              Optimized website performance and user experience. <br />
+              Conducted cross-browser testing and debugging.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Education" class="w-full px-7 h-96 py-8">
+        <div id="edLine" class="flex items-center w-full h-14">
+          <h1 class="text-3xl w-2/6 text-gray-400 mb-6">Education</h1>
+          <div
+            class="h-px w-2/4 opacity-70 bg-slate-600 bg-red mt-4 block m-auto"
+          ></div>
+        </div>
+
+        <div class="edcont1 flex w-full gap-4 text-slate-300 mt-1">
+          <div class="year w-2/5">
+            <h1>Enrolled.</h1>
+          </div>
+
+          <div class="field w-2/4">
+            BCom Computer Applications (BCCA)-4th Sem<br />
+            <span class="text-slate-500">S.B City College, Nagpur</span>
+          </div>
+        </div>
+
+        <div class="edcont2 flex w-full gap-4 text-slate-300 mt-1">
+          <div class="year w-2/5">
+            <h1>2018 - 2020</h1>
+          </div>
+
+          <div class="field w-2/4">
+            Higher Secondary Education (12th Std)
+            <br />
+            <span class="text-slate-500">S.B City College, Nagpur</span>
+          </div>
+        </div>
+
+        <div class="edcont3 flex w-full gap-4 text-slate-300 mt-1">
+          <div class="year w-2/5">
+            <h1>2016 - 2018</h1>
+          </div>
+
+          <div class="field w-2/4">
+            Secondary Education (10th Std)
+
+            <br />
+            <span class="text-slate-500">Jamdar High School, Nagpur</span>
+          </div>
+        </div>
+
+        <div class="edcont4 flex w-full gap-4 text-slate-300 mt-1">
+          <div class="year w-2/5">
+            <h1>2020 - 2021</h1>
+          </div>
+
+          <div class="field w-2/4">
+            Industrial Training Institute (ITI) - Sheet Metal Field
+
+            <br />
+            <span class="text-slate-500">Government Institution, Nagpur</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="rightreserve" class="h-auto p-9 flex flex-col justify-center items-center">
+        <h1 class="text-xl">REHAN</h1>
+       <h3>&copy;2024 - Yash Singnapure</h3>
+       <h4 class="text-gray-600 text-sm">All Right Reserve</h4>
+       <div
+       class="linkAndResume flex h-10  mt-3 items-center text-gray-400"
+     >
+       <div class="links flex items-center text-xl w-2/4 gap-8 pt-2">
+         <a href="mailto:@yashsingnapure5848@gmail.com"
+           ><ion-icon name="mail-outline"></ion-icon
+         ></a>
+         <a href="https://www.linkedin.com/in/yash-singnapure-164643243/"
+           ><ion-icon name="logo-linkedin"></ion-icon
+         ></a>
+         <a href="https://github.com/rehaneditzzz"
+           ><ion-icon name="logo-github"></ion-icon
+         ></a>
+         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+       </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
